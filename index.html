@@ -1,0 +1,283 @@
+<!-- Bugs: when click on nav from another link to top, bottom border remains -->
+
+<!DOCTYPE HTML> 
+<html lang="en">
+<head>
+    <title>Jason Jiang</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="http://cdn.mysitemyway.com/icons-watermarks/simple-black/bfa/bfa_terminal/bfa_terminal_simple-black_512x512.png
+"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <!--Navbar-->
+    <div class="ui top sidebar" id="nav">
+      <div class="ui center aligned page grid">
+        <div class="five column row">
+            <a class="item active column" href="#home" id="nav-title">
+                <h3>Jason Jiang</h3>                
+            </a>
+
+            <a class="item link desktop column" href="#Education">
+              Education
+            </a>
+
+            <a class="item link desktop column" href="Jiang_Jason_Resume.pdf">
+              Resume
+            </a>
+        
+            <a class="item link desktop column" href="#MyProjects">
+              Projects
+            </a>
+      
+            <a class="item link desktop column" href="#MyInterests">
+              Interests
+            </a>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- Intro of Website -->
+    <div id="home" class="ui two column grid landing">
+        <div class="sixteen wide mobile column seven wide computer column landing-img-container"></div>
+        <div class="sixteen wide mobile column nine wide computer column about">
+            <h1>Hi, I'm <span>Jason Jiang</span></h1>
+            <p>I am a double major in Computer Science and Applied Mathematics at UCLA.
+            I enjoy anything related to algorithms and their applications including implementing an evolutionary algorithm to optimize Pokemon teambuilding. I also happen to play DanceDanceRevolution on the side when I want to take a break from everything else in my life.</p>
+        </div>
+    </div> 
+    
+    <div class="pusher">
+       
+      <!-- Education & Skills -->
+
+      <div class="ui grid">
+        <div class="sixteen wide computer column">
+          <div id="easing_wrapper">
+            <div id="easing">
+
+              <div class="ui container content">
+                <h2 id="Education">Education</h2>
+
+                <div class="ui three column stackable padded grid">
+                  <div class="column">
+                    <div class="ui piled segment" data-0="background-color:rgb(166,166,166);" data-500="background-color:rgb(255,255,255);">
+                       <h3 class="ui header">University of California, Los Angeles</h3>
+                       <p>GPA: 3.75</p>
+                       <p>Graduating June 2018</p>
+                       <p>B.S, Computer Science</p>
+                       <p>B.S, Applied Mathematics</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui piled segment" data-0="background-color:rgb(191,191,191);" data-600="background-color:rgb(255,255,255);">
+                      <h3 class="ui header">Relevant Coursework</h3>
+                      <ul>
+                          <li>Data Structures and Algorithms</li>
+                          <li>Computer Organization</li>
+                          <li>Software Construction Laboratory</li>
+                          <li>Logic Design</li>
+                          <li>Operating Systems</li>
+                          <li>Databases</li>
+                          <li>Algorithms</li>
+                          <li>Computer Architecture</li>
+                          <li>Programming Languages</li>
+                          <li>Scalable Web Architectures</li>
+                          <li>Artificial Intelligence</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui piled segment" data-0="background-color:rgb(217,217,217);" data-700="background-color:rgb(255,255,255);">
+                      <h3 class="ui header">Technical Proficiencies</h3>
+                      <ul>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                        <li>React-Native</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui content">
+              <!-- Projects -->
+              <h2 id="MyProjects">My Projects</h2>
+
+              <div class="ui stackable four column grid content">
+                  <div class="centered row projects">
+                      <div class="five wide column">
+                          <h3>Pokemon Evolutionary Algorithm</h3>
+                          <div class="img-container"><img src="https://i.imgur.com/6lW1sLk.png"></div>
+                          <p>An exploration to what extent an evolutionary algorithm can determine the optimal traits of a pokemon team. Programmed in Java. I also wrote a paper that discussed the results of the algorithm and overall appraoch to the project.</p>
+                      </div>
+                      <div class="five wide column">
+                          <h3>Pokemon Simulator</h3>
+                          <div class="img-container"><img src="https://i.imgur.com/b6S7LON.png"></div>
+                          <p>A text-based Pokemon Battle Simulator. Includes support up to the 5th Generation of the Pokemon. Written in Java, this simulator applies inheritance to quickly establish the complex relationships between different mechanics found within the Pokemon games. Hash maps were utilized to create a large Pokemon library that provides players many options on each game.</p>
+                      </div>
+                      <div class="five wide column">
+                          <h3>Web Enabled Security System</h3>
+                          <div class="img-container"><img src="https://www.raspberrypi.org/wp-content/uploads/2015/06/case2-500x334.jpeg"></div>
+                          <p>Using a Rasberry Pi 2, PIR motion sensors, and a TTL serial camera I developed a motion detector security camera. When motion was detected with the motion sensors, the TTL camera will take a picture and send an email to me. The camera was controlled using the picamera library and the GPIO library was used to receive input from the PIR motion sensor.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- end project section -->
+          </div>
+
+         <div class="ui content">
+             <!-- Interests -->
+            <h2 id="MyInterests">My Interests</h2>
+            <div class="ui internally celled stackable grid container content">
+                <div class="centered row interests">
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/Me6n2oU.png"></div>
+                        <p>As my first fighting game series ever, the Super Smash Brothers Franchise has been a staple of my gaming history.</p>
+                    </div>
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/TUBD9tE.png"></div>
+                        <p>Dance Dance Revolution (DDR) is a rhythm game that I have been playing since 4th grade and was my first rhythm game. Hitting a storm of arrows through pumping dance music never gets old.</p>
+                    </div>
+                    <div class="five wide column">
+                        <div class="img-container"><img src="http://i.imgur.com/RZSND3d.png"></div>
+                        <p>Guitar Hero is a game that offers simulated rockdom. What can be more enticing than that. Add the fact that its another rhythm game with great music and you have a happy player rocking out on songs like Through the Fire and the Flames and Cult of Personality.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <footer id="contact">
+        <a href="https://github.com/JasonxJiang" class="contact-col"><i class="big github icon"></i> jasonxjiang</a>
+        <div class="contact-col"><i class="large mail outline icon"></i> danielstop.ucla.edu</div>
+      </footer>
+    </div> <!-- end pusher -->
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.1/semantic.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
+
+    <!-- Animation for project carousel-->
+    <script>
+    var maxWidth = 992;
+
+     $(document).ready(function() {
+
+        handleLanding();
+        handleNav();
+        skrollr.init();
+
+
+        // Initial nav settings
+        $(".sidebar").sidebar({
+            dimPage: false
+        });
+        $('.sidebar').sidebar('toggle');
+
+        // Scroll Speed
+        // Offset jump to internal link
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 40
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+        $(window).resize(function() {
+           handleLanding();
+           handleNav();
+        });
+
+         // Hilight what was selected previously
+         $("#nav a").click(function() {
+            $("#nav a").removeClass("active");
+            $(this).addClass("active");
+         });
+
+
+         function handleNav() {
+            if ($(window).width() < maxWidth) {
+                 $("#nav-title h3").html("Jason <br> Jiang");
+                 $(".link").removeClass("desktop");
+                 $(".link").addClass("mobile");
+            } else {
+                 $("#nav-title h3").html("Jason Jiang");
+                 $(".link").removeClass("mobile");
+                 $(".link").addClass("desktop");
+            }
+         }
+
+         function handleLanding() {
+            if ($(window).width() < maxWidth) {
+                $(".landing").height($(window).height());
+                $(".landing-img-container").removeClass("desktop");
+                $(".about").removeClass("desktop");
+                $(".about").removeClass("column");
+                $(".landing-img-container").addClass("mobile");
+                $(".about").addClass("mobile");
+                $(".about").css("bottom", $(".about").outerHeight());
+            }
+            else {
+                $(".landing-img-container").removeClass("mobile");
+                $(".about").removeClass("mobile");
+                $(".landing-img-container").addClass("desktop");
+                $(".about").addClass("desktop");
+                $(".about").addClass("column");
+                $(".about").css("bottom", 0);
+            }
+         };
+
+         // Handle nav on scroll direction
+         var lastScrollTop = 0;
+
+         $(window).scroll(function(event) {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop){
+                    // downscroll code
+                    $(".sidebar a").css("border-bottom", "none");
+                    if ($(".sidebar").hasClass("visible")) {
+                        $('.sidebar').sidebar('toggle');
+                    }
+                } else {
+                   // upscroll code
+                   $(".sidebar a.active").css("border-bottom", "solid 4px #39789B");
+                   if (!$(".sidebar").hasClass("visible")) {
+                       $('.sidebar').sidebar('toggle');
+                   }
+                }
+                lastScrollTop = st;
+            
+         });
+
+     });
+    </script>
+</body>
+</html>
